@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <center>
+
+    <section class="mt-12 bg-zinc-500 w-fit text-3xl px-2 pt-4" id="main" >
+       <div class="flex">
+        <h2 class="center text-2xl mx-4 text-orange-500">Calculator</h2>
+        <img src="img/calculator.png" class="w-8 pb-1 ml-auto mx-2" alt="">
+        
+       </div>
+      </div>
+          <div>
+                <input type="text" placeholder="" id="result" class="rounded-none border-solid border-8 text-center border-zinc-600 w-full h-32"   >
+            </div>
+            <div class="py-3">
+                <button onclick="clearAll()" class="  bg-red-900 hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">C</button>
+                <button onclick="inputNumber('')"class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20  text-xs md:text-sm"><</button>
+                <button onclick="inputNumber('%')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">%</button>
+                <button  onclick="inputNumber('/')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">/</button>
+            <div class="py-3">
+                <button onclick="inputNumber('7')"class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">7</button>
+                <button onclick="inputNumber('8')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">8</button>
+                <button  onclick="inputNumber('9')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">9</button>
+                <button  onclick="inputNumber('*')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">x</button>
+            </div>
+            <div class="py-3">
+                <button onclick="inputNumber('4')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">4</button>
+                <button onclick="inputNumber('5')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">5</button>
+                <button onclick="inputNumber('6')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full  h-20 md:w-18 w-20 text-xs md:text-sm">6</button>
+                <button onclick="inputNumber('+')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full  h-20 md:w-18 w-20 text-xs md:text-sm">+</button>
+            </div>
+            <div class="py-3" >
+                <button onclick="inputNumber('1')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">1</button>
+                <button onclick="inputNumber('2')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">2</button>
+                <button onclick="inputNumber('3')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">3</button>
+                <button onclick="inputNumber('-')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">-</button>
+               
+            </div>
+            <div class="py-3">
+                <button onclick="inputNumber('gt')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20 md:w-18 w-20 text-xs md:text-sm">GT</button>
+                <button onclick="inputNumber('0')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full h-20  md:w-18 w-20 text-xs md:text-sm">0</button>
+                <button onclick="inputNumber('.')" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full  h-20  md:w-18 w-20 text-xs md:text-sm">.</button>
+                <button onclick="solve()" class="bg-black hover:bg-[#7a584c] text-white font-bold py-2 px-4 rounded-full  h-20 md:w-18 w-20 text-xs md:text-sm"> =</button>
+                
+            </div>
+        </section>
+        </center>
+        
+   
+    <script src="index.js"></script>
+</body>
+</html>

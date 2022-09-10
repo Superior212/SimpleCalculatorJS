@@ -1,0 +1,22 @@
+body{
+    background-image: url(/Calculator/img/pexels-cottonbro-5083491.jpg);
+    background-size: contain;
+}
+#main{
+    border-radius: 50px;
+background: zinc;
+box-shadow: inset 2px 10px 10px #bebebe,
+            inset 0px 0px 10px #ffffff;
+}
+button{
+    border-radius: 132px;
+    background: #474946;
+    box-shadow:  0px 0px 0px #3c3e3c,
+                 -1px 5px 10px #525451;
+}
+#result{
+    border-radius: 18px;
+background: #474946;
+box-shadow:  0px 0px 0px #1c1d1c,
+             5px 5px 7px #727570;
+}
