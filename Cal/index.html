@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator v2</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <center>
+        <section class="px-1 pt-4 w-fit text-2xl mt-8 border-8 border-solid rounded-lg" id="main">
+           <div class="flex">
+            <div class="font-semibold text-left">
+                <h1>
+                    Calculator
+                </h1>
+            </div>
+            <div class="w-6 pb-1 ml-auto mx-2">
+                <img src="img/world.png" alt="">
+            </div>
+            
+           </div>
+            <div class="py-2">
+                <input disabled type="text" placeholder="" id="result" class="text-center h-28 rounded-none border-4 border-solid border-zinc-100 w-64">
+            </div>
+            <div class="py-1">
+                <button onclick="clearAll()" class="bg-[#f8d607] rounded-full px-2 w-14 h-14 font-bold">AC</button>
+                <button onclick="inputNumber('-')" class="bg-[#f8d607] rounded-full w-14 h-14 px-2 font-bold">+/-</button>
+                <button onclick="inputNumber('%')" class="bg-[#f8d607] rounded-full w-14 h-14 px-4 font-bold">%</button>
+                <button onclick="inputNumber('/')" class="bg-[#fea347] rounded-full w-14 h-14 px-2">➗</button>
+            </div>
+            <div class="py-1">
+                <button onclick="inputNumber('7')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">7</button>
+                <button onclick="inputNumber('8')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">8</button>
+                <button onclick="inputNumber('9')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">9</button>
+                <button onclick="inputNumber('*')" class="bg-[#fea347] rounded-full w-14 h-14 px-2">❌</button>
+            </div>
+            <div class="py-1">
+                <button onclick="inputNumber('4')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">4</button>
+                <button onclick="inputNumber('5')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">5</button>
+                <button onclick="inputNumber('6')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">6</button>
+                <button onclick="inputNumber('-')" class="bg-[#fea347] rounded-full w-14 h-14 px-2">➖</button>
+            </div>
+            <div class="py-1">
+                <button onclick="inputNumber('1')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">1</button>
+                <button onclick="inputNumber('2')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">2</button>
+                <button onclick="inputNumber('3')" class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">3</button>
+                <button onclick="inputNumber('+')" class="bg-[#fea347] rounded-full w-14 h-14 px-2">➕</button>
+            </div>
+            <div class="py-1">
+                <button onclick="inputNumber('0')" class="bg-[#7f7f7f] rounded-full w-32  h-16 px-4 font-bold">0</button>
+                <button onclick="inputNumber('.')"class="bg-[#7f7f7f] rounded-full w-14 h-14 px-4 font-bold">.</button>
+                <button onclick="solve('=')" class="bg-[#fea347] rounded-full w-14 h-14 px-4 font-bold">=</button>
+                <!-- <button onclick="cancel()" class="bg-gray-300 rounded-full w-16 h-16 px-4">C</button> -->
+            </div>
+            
+            
+            
+                </section>
+
+    </center>
+  
+    <script src="script.js"></script>
+</body>
+</html>
